@@ -1,6 +1,15 @@
 version: "3.9"
 
 services:
+  nginx:
+    image: nginx:latest
+    ports:
+      # - "80:80"
+      - "443:443"
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf
+      - ./data/certbot/conf:/etc/letsencrypt
+      - ./data/certbot/www:/var/www/certbot
   web:
     image: htetlinmaung/vibetalk
     restart: always
