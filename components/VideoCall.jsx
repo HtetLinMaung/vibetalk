@@ -21,10 +21,10 @@ const VideoCall = () => {
         });
 
       const peerInstance = new Peer(undefined, {
-        host: "150.95.82.125",
+        host: "vibetalk.watchvaultbydiggie.com",
         // Specify the PeerJS server here; for development, you can use the cloud server
         path: "/vibetalk-peer",
-        port: "9000",
+        port: "443",
       });
       setPeer(peerInstance);
 
