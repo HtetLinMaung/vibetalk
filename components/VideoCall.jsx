@@ -97,8 +97,8 @@ const VideoCall = () => {
   return (
     <div className="video-call-container">
       <h1>{peerId}</h1>
-      <video id="local-video" autoPlay muted></video>
-      <video id="remote-video" autoPlay></video>
+      <video id="local-video" autoPlay muted playsInline></video>
+      <video id="remote-video" autoPlay playsInline></video>
       <div className="call-actions">
         <button id="call-btn" onClick={handleCall}>
           Call
