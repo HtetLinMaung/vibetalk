@@ -6,4 +6,4 @@ services:
     restart: always
     ports:
       - "9000:9000"
-    
+    command: peerjs --port 9000 --path /vibetalk-peer
